@@ -281,7 +281,7 @@ https://templatemo.com/tm-580-woox-travel
                 <td>${product.id}</td>
                 <td>${product.name}</td>
                 <td>$${product.price}</td>
-                <td><img src="${product.image_url}" alt="${product.name}" style="width: 80px; height: 60px; object-fit: cover; border-radius: 8px;" ></td>
+                <td><img src="${product.image_url}" alt="${product.name}" style="width: 80px; height: 60px; object-fit: cover; border-radius: 8px;" onerror="this.src='assets/images/deals-01.jpg'"></td>
                 <td>${generateStars(product.rating.rate)}</td>
                 <td>
                   <button class="btn btn-primary btn-sm" onclick="bookProduct(${product.id})">Book Now</button>
